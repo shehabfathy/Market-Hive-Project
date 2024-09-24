@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+.paddingX {
+  @apply px-3 sm:px-6 md:px-10 lg:px-16 xl:px-28 2xl:px-64;
+}
+
+.media {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2;
+}
+
+h1 {
+  @apply font-josefin-sans;
+}
+
+h2 {
+  @apply font-josefin-sans;
+}
+
+h3,
+h4 {
+  @apply font-nunito;
+}
+
+h5,
+h6 {
+  @apply font-nunito;
+}
+
+p {
+  @apply font-nunito;
+}
+
+@media screen and (min-width: 1024px) {
+  button.slick-arrow.slick-prev::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  button.slick-arrow.slick-prev {
+    left: 1rem;
+  }
+
+  button.slick-arrow.slick-next::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  button.slick-arrow.slick-next {
+    right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  button.slick-arrow.slick-prev {
+    left: 2rem;
+  }
+
+  button.slick-arrow.slick-next {
+    right: 3.5rem;
+  }
+}
+
+.ant-btn-primary {
+  background-color: #f39932 !important;
+}
+
+.ant-btn-primary:hover {
+  background-color: #d97706 !important;
+}
+
+.ant-btn-default:hover {
+  color: #f39932 !important;
+  border-color: #f39932 !important;
+}
+
+.ant-spin-dot-item {
+  background-color: #f39932 !important;
+}
